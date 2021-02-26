@@ -7,4 +7,8 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-r1cs-std = {git="https://github.com/arkworks-rs/r1cs-std", version="0.1.0"}
+r1cs = {git="https://github.com/arkworks-rs/r1cs-std", version="0.1.0", package="ark-r1cs-std"}
+ec = {git="https://github.com/arkworks-rs/algebra", version="0.1.0", package="ark-ec"}
+ff = {git="https://github.com/arkworks-rs/algebra", version="0.1.0", package="ark-ff"}
+bn254 = {git="https://github.com/arkworks-rs/curves", version="0.1.0", package="ark-bn254"}
+snark = { git = "https://github.com/arkworks-rs/snark", package="ark-relations", default-features = false }
